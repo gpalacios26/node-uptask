@@ -1,0 +1,42 @@
+{
+  "name": "uptask",
+  "version": "1.0.0",
+  "description": "proyecto uptask node",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "watch": "webpack --w --mode development",
+    "start": "concurrently \"npm run dev \" \"npm run watch \" "
+  },
+  "author": "Gregory Palacios",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt-nodejs": "0.0.3",
+    "concurrently": "^4.1.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.3",
+    "express-session": "^1.15.6",
+    "express-validator": "^6.14.0",
+    "html-to-text": "^4.0.0",
+    "juice": "^5.1.0",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^5.1.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2",
+    "sequelize": "^6.17.0",
+    "shortid": "^2.2.16",
+    "slug": "^5.2.0",
+    "sweetalert2": "^8.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "nodemon": "^2.0.15",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  }
+}
